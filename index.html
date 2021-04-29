@@ -1,3 +1,7 @@
+<!--
+  templateType: "email"
+  isAvailableForNewContent: true
+-->
 <!DOCTYPE html>
 <html>
 
@@ -679,6 +683,15 @@
                     <a href="https://www.instagram.com/weimpact.tech/" target="_blank">
                       <img src="https://weimpact-tech.github.io/newsletter/img/insta-icon.png"
                         alt="instagram" /></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-bottom: 10px" align="center">
+                    {{ site_settings.company_name }} - 
+                   {{ site_settings.company_street_address_1 }} - 
+                    {{ site_settings.company_city }} - 
+                    {{ site_settings.company_state }} - 
+                    <a href="{{ unsubscribe_link }}">Unsubscribe</a>
                   </td>
                 </tr>
               </table>
